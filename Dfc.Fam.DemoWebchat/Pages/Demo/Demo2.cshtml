@@ -1,0 +1,22 @@
+﻿@page
+@model Dfc.Fam.DemoWebchat.Demo.Demo2Model
+@{
+	ViewData["Title"] = "Demo 2 - Click4Assistance";
+}
+
+<div class="text-center">
+	<h1 class="display-4">@ViewData["Title"]</h1>
+	<p><a href="https://login4.click4assistance.co.uk/default.aspx?ReturnUrl=%2f" target="_blank">Launch the Click4Assistance Agent console</a>.</p>
+</div>
+
+<script type="text/javascript">
+	function InitialiseC4A() {
+		/* Chat Tool */
+		var Tool1 = new C4A.Tools(1);
+		C4A.Run('764e53b3-48eb-42db-be49-89c3243bfd0a');
+	}
+</script>
+
+<noscript><a href="https://www.click4assistance.co.uk/add-live-chat-software-click4assistance-uk" target="_blank" style="font-size:10px;position:fixed;bottom:2px;right:2px;">Click4Assistance UK Live Chat Software</a></noscript>
+
+<script src="https://v4in1-si.click4assistance.co.uk/SI.js" type="text/javascript" defer="defer"></script>

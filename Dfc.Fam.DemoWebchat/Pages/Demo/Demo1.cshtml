@@ -1,0 +1,17 @@
+﻿@page
+@model Dfc.Fam.DemoWebchat.Demo.Demo1Model
+@{
+    ViewData["Title"] = "Demo 1 - Comm 100";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p><a href="https://hosted.comm100.com/LiveChat/agentConsole.aspx?siteId=235019" target="_blank">Launch the Comm 100 Agent console</a>.</p>
+</div>
+
+<!--Begin Comm100 Live Chat Code-->
+<div id="comm100-button-20"></div>
+<script type="text/javascript">
+    var Comm100API = Comm100API || {}; (function (t) { function e(e) { var a = document.createElement("script"), c = document.getElementsByTagName("script")[0]; a.type = "text/javascript", a.async = !0, a.src = e + t.site_id, c.parentNode.insertBefore(a, c) } t.chat_buttons = t.chat_buttons || [], t.chat_buttons.push({ code_plan: 20, div_id: "comm100-button-20" }), t.site_id = 235019, t.main_code_plan = 20, e("https://vue.comm100.com/livechat.ashx?siteId="), setTimeout(function () { t.loaded || e("https://standby.comm100vue.com/livechat.ashx?siteId=") }, 5e3) })(Comm100API || {})
+</script>
+<!--End Comm100 Live Chat Code-->
